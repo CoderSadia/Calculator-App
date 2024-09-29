@@ -6,6 +6,8 @@ Project Structure
 1.	main.dart: Entry point of the Flutter app.
 2.	calculator_screen.dart: The main screen where the calculator functionality is implemented.
 3.	button_values.dart: A separate file that contains button values, such as numbers, operators, and actions (clear, delete, etc.).
+
+
 Widgets and Layout
 CalculatorScreen Widget
 •	Type: Stateful Widget
