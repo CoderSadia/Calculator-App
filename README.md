@@ -9,9 +9,12 @@ Project Structure
 
 
 Widgets and Layout
+
 CalculatorScreen Widget
+
 •	Type: Stateful Widget
 •	Purpose: Displays the calculator interface and handles the interaction and state changes.
+
 Key UI Components:
 1.	App Bar:
 Displays a centered title "Calculator App".
@@ -23,6 +26,7 @@ Aligns text to the right for a clean calculator feel.
 Dynamically generates the calculator buttons from the values defined in button_values.dart.
 Uses SizedBox to adjust the size of each button, and buttons are evenly spaced.
 Buttons are laid out using the Wrap widget to create a grid-like structure for numbers and operations.
+
 
 Core Functions
 1.	Button Creation (buildButton):
