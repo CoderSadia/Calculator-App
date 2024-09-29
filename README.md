@@ -1,4 +1,6 @@
-Documentation for Flutter Calculator App
+Documentation for Flutter Calculator App:
+
+
 This documentation explains the structure, logic, and features of the provided Flutter Calculator App code. The app performs basic arithmetic operations and provides a simple user interface using Flutter. The app consists of a primary screen where buttons are dynamically generated and displayed. Let's break it down:
 Project Structure
 1.	main.dart: Entry point of the Flutter app.
