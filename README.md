@@ -93,19 +93,23 @@ buttonValues List
 The buttonValues list is an ordered collection of all the buttons that appear in the calculator. It specifies the sequence in which buttons are displayed on the UI.
 
 The buttons in the list are ordered in a grid-like fashion (4 columns by 5 rows) with:
+
 •	The first row containing DEL, C, %, and ×.
 •	The second to fourth rows contain the number buttons and basic arithmetic operations.
 •	The final row contains 0, ., and = for calculating the result.
 
 Usage of the Btn Class
+
 •	In the Flutter app, the buttonValues list from the Btn class is mapped to UI components (e.g., buttons) in the calculator screen. Each value in the list represents a button on the calculator and is rendered accordingly.
 
 Button Values Summary
+
 •	The Btn class provides a clean, organized way to manage button labels for the calculator app.
 •	It includes constants for numbers, operators, and special actions like clear and delete.
 •	The buttonValues list holds all button labels in a specific order, ensuring they are displayed in the correct sequence in the calculator UI.
 
 App Usage
+
 1.	Input Numbers:
 Tap the number buttons to input the first number (number1).
 2.	Select Operation:
