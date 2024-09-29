@@ -13,6 +13,7 @@ Widgets and Layout
 CalculatorScreen Widget
 
 •	Type: Stateful Widget
+
 •	Purpose: Displays the calculator interface and handles the interaction and state changes.
 
 Key UI Components:
@@ -53,6 +54,7 @@ If a calculation is in progress (i.e., number1, operand, and number2 are present
 clearAll: Resets the calculator, clearing all values (number1, operand, number2).
 delete: Deletes the last character entered, whether it’s part of number1, number2, or the operator.
 
+
 Design Decisions
 1.	Color Scheme:
 Operator Buttons: Colored orange to distinguish from number buttons.
@@ -64,31 +66,40 @@ Other buttons maintain a uniform size to keep the layout neat and consistent.
 3.	Screen Responsiveness:
 The button sizes and layouts adapt to the screen size using MediaQuery. This ensures the buttons are well spaced and look consistent across different devices.
 
+
 button_values.dart
 Button Values
+
 The buttons are categorized based on their functionality, including number buttons, operator buttons, and special action buttons. Here’s a breakdown:
-1.	Special Action Buttons:
+
+1.Special Action Buttons:
+
 del ("D"): This button is used to delete the last digit or operator in the current input.
 clr ("C"): Clears the entire input, resetting the calculator.
 per ("%"): Converts the current number to its percentage value.
 calculate ("="): Triggers the calculation of the equation and displays the result.
-2.	Operator Buttons:
+
+2.Operator Buttons:
 multiply ("×"): Multiplies the two input numbers.
 divide ("÷"): Divides the first number by the second number.
 add ("+"): Adds the two input numbers.
 subtract ("-"): Subtracts the second number from the first number.
-3.	Number Buttons:
+
+3.Number Buttons:
 n0 ("0") to n9 ("9"): The digits 0 through 9 used to input numbers.
 dot ("."): Used for decimal numbers to input floating point values.
 
 buttonValues List
 The buttonValues list is an ordered collection of all the buttons that appear in the calculator. It specifies the sequence in which buttons are displayed on the UI.
+
 The buttons in the list are ordered in a grid-like fashion (4 columns by 5 rows) with:
 •	The first row containing DEL, C, %, and ×.
 •	The second to fourth rows contain the number buttons and basic arithmetic operations.
 •	The final row contains 0, ., and = for calculating the result.
+
 Usage of the Btn Class
 •	In the Flutter app, the buttonValues list from the Btn class is mapped to UI components (e.g., buttons) in the calculator screen. Each value in the list represents a button on the calculator and is rendered accordingly.
+
 Button Values Summary
 •	The Btn class provides a clean, organized way to manage button labels for the calculator app.
 •	It includes constants for numbers, operators, and special actions like clear and delete.
